@@ -32,7 +32,9 @@ public class CopyListWithRadomPointer {
           if(runner.next != null){
             copy.next = map.get(runner.next);
           }
-          copy.random = map.get(runner.random);
+          if(runner.random != null){
+            copy.random = map.get(runner.random);
+          }
 
           runner = runner.next;
         }
